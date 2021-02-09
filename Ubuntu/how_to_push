@@ -1,0 +1,21 @@
+*****UbuntuからGithubへリポジトリを追加する。*****
+
+1.githubのページで新しくリポジトリを追加する。
+
+2.ubuntuで追加したいディレクトリ内で以下を実行し、ローカルリポジトリを作成する。
+  $ git init
+
+3.以下を実行してファイルをインデックスに追加する。
+  $ git add -A
+  オプションを-uにしてファイル名を指定することもできる。
+  
+4.以下を実行してローカルリポジトリに変更履歴を保存。
+  $ git commit -m "メッセージ"
+  
+5.以下を実行して追加先のリモートリポジトリを登録する。
+  $ git remote add origin "url"
+  例えば、このリポジトリに登録したい場合は
+  $ git remote add origin https://github.com/nabla27/How_to.git
+  
+6.以下を実行してリモートリポジトリにpushする。(リモート側のユーザー名、パスワードを要求される)
+  $ git push -u origin master
