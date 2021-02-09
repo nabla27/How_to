@@ -1,0 +1,8 @@
+*****GithubからUbuntuにリポジトリをcloneする*****
+
+1. 以下を実行して指定したurl先のリモートリポジトリからcloneする。
+  $ git clone "url"
+  例えばこのリポジトリをcloneするとき、
+  $ git clone https:/github.com/nabla27/How_to.git
+
+プロキシサーバー系のエラーが出る日もある...??
